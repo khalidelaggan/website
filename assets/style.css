@@ -1,0 +1,310 @@
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  background: whitesmoke;
+  margin: 0;
+}
+
+.top {
+  margin: 0;
+  font-family: "Inconsolata", monospace;
+  color: black;
+  font-size: 12px;
+}
+
+.middle {
+  font-weight: 400;
+  text-align: right;
+  font-size: 70px;
+  padding: 10vh 0;
+}
+
+.mainContainer {
+  padding: 0 20%;
+  background: linear-gradient(to bottom, snow, snow 90%, whitesmoke 95%);
+  padding-bottom: 50px;
+}
+
+.secondContainer {
+  padding: 0 20%;
+  background: whitesmoke;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+.squiggle {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+ul {
+  padding: 0;
+}
+
+.fixed {
+  width: 100px;
+  opacity: 0.8;
+}
+
+.fixedImage {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+   -ms-animation: fadein 3s; /* Internet Explorer */
+       animation: fadein 3s;
+}
+
+.fixed2 {
+  position: absolute;
+  top: 13%;
+  right: 0;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+   -ms-animation: fadein 2s; /* Internet Explorer */
+       animation: fadein 2s;
+}
+
+.fixed3 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+   -ms-animation: fadein 4s; /* Internet Explorer */
+       animation: fadein 4s;
+}
+
+.squiggle:before {
+  content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+  font-family: Times New Roman;
+  letter-spacing: -5px;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  left: -2px;
+  overflow: hidden;
+  transition: all 0.2s;
+  background: linear-gradient(to right, #b2f5a6, #ffafbd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  z-index: -1;
+}
+
+h3.squiggle {
+  font-size: 30px;
+}
+
+h3.squiggle:before {
+  top: 13px;
+}
+
+.tag {
+  background: linear-gradient(
+    to right,
+    rgba(178, 245, 166, 0.5),
+    rgba(255, 175, 189, 0.5)
+  );
+  display: initial;
+  padding: 2px;
+  border-radius: 1px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content div:first-child {
+  margin-right: 20px;
+}
+
+.skills p {
+  font-size: 20px;
+}
+
+.footer {
+  text-align: center;
+  margin: 30px 0;
+}
+
+li {
+  display: table;
+  padding: 8px 0;
+  transition: all 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s;
+}
+
+.skills i {
+  color: darkslategrey;
+} 
+
+.code {
+  margin-right: 10px;
+}
+
+.code a:hover {
+  background: rgba(178, 245, 166, 0.4);
+  cursor: pointer;
+}
+
+.code li:before {
+  content:url(../images/code-solid.svg);
+  width: 16px;
+  vertical-align:middle;
+  display: inline-block;
+  margin-right: 10px;
+  color: darkslategrey;
+}
+
+.journalism a:hover {
+  background: rgba(255, 175, 189, 0.4);
+  cursor: pointer;
+}
+
+.journalism li:before {
+  content:url(../images/pencil-alt-solid.svg);
+  width: 16px;
+  vertical-align:middle;
+  display: inline-block;
+  margin-right: 10px;
+  color: darkslategrey;
+}
+
+.footer i {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:darkslategrey;
+  font-size: 24px;
+  transition: all 0.3s;
+  padding: 5px;
+}
+
+.footer a i:hover{
+  background: linear-gradient(to right, #b2f5a6, #ffafbd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+.web:before {
+  background:  #b2f5a6;
+  content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+  font-family: Times New Roman;
+  letter-spacing: -5px;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  width: 110%;
+}
+
+.jrn:before {
+  background:  #ffafbd;
+  content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+  font-family: Times New Roman;
+  letter-spacing: -5px;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  width: 110%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+@media (max-width: 600px) {
+
+  .middle {
+    padding: 0;
+    font-size: 50px;
+    text-align: left;
+  }
+  
+  .content {
+    display: block;
+  }
+
+  .skills {
+    display: block;
+  }
+
+  .skills div:first-child {
+    margin-right: 0;
+  }
+
+  .skills div:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .fixed {
+    width: 70px;
+  }
+
+  .fixedImage {
+    width: 50px;
+  }
+
+  .mainContainer {
+    max-width: calc(100% - 100px);
+    padding-bottom: 30px;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
