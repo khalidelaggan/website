@@ -22,12 +22,12 @@ body {
 
 .mainContainer {
   padding: 0 20%;
-  background: linear-gradient(to bottom, snow, snow 90%, whitesmoke 95%);
+  background: whitesmoke;
   padding-bottom: 50px;
 }
 
 .secondContainer {
-  padding: 0 20%;
+  padding: 0 15%;
   background: whitesmoke;
 }
 
@@ -98,7 +98,7 @@ ul {
   left: -2px;
   overflow: hidden;
   transition: all 0.2s;
-  background: linear-gradient(to right, #b2f5a6, #ffafbd);
+  background: linear-gradient(to right, #94ddeb, #fde293);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
@@ -114,11 +114,8 @@ h3.squiggle:before {
 }
 
 .tag {
-  background: linear-gradient(
-    to right,
-    rgba(178, 245, 166, 0.5),
-    rgba(255, 175, 189, 0.5)
-  );
+  background: black;
+  color:white;
   display: initial;
   padding: 2px;
   border-radius: 1px;
@@ -156,7 +153,7 @@ a {
 
 .skills i {
   color: darkslategrey;
-} 
+}
 
 .code {
   margin-right: 10px;
@@ -168,7 +165,7 @@ a {
 }
 
 .code li:before {
-  content:url(../images/code-solid.svg);
+  content:url(code-solid.svg);
   width: 16px;
   vertical-align:middle;
   display: inline-block;
@@ -182,7 +179,7 @@ a {
 }
 
 .journalism li:before {
-  content:url(../images/pencil-alt-solid.svg);
+  content:url(pencil-alt-solid.svg);
   width: 16px;
   vertical-align:middle;
   display: inline-block;
@@ -193,19 +190,19 @@ a {
 .footer i {
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color:darkslategrey;
-  font-size: 24px;
+  -webkit-text-stroke-color:black;
+  font-size: 35px;
   transition: all 0.3s;
   padding: 5px;
 }
 
 .footer a i:hover{
-  background: linear-gradient(to right, #b2f5a6, #ffafbd);
+  background: linear-gradient(to right, #94ddeb, #fde293);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;}
 
 .web:before {
-  background:  #b2f5a6;
+  background:  #fde293;
   content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
   font-family: Times New Roman;
   letter-spacing: -5px;
@@ -222,7 +219,7 @@ a {
 }
 
 .jrn:before {
-  background:  #ffafbd;
+  background:  #94ddeb;
   content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
   font-family: Times New Roman;
   letter-spacing: -5px;
@@ -255,7 +252,7 @@ a {
     font-size: 50px;
     text-align: left;
   }
-  
+
   .content {
     display: block;
   }
